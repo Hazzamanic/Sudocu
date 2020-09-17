@@ -12,8 +12,8 @@ namespace Sudocu.Tests
             foreach (var board in GetBoards())
             {
                 i++;
-                var result = Solver.Solve(board);
-                Assert.True(result.IsSolved);
+                var result = SimpleSolver.Solve(board);
+                Assert.True(result.Solved);
             }
 
 
